@@ -242,6 +242,10 @@ async function processMcpCommand(command) {
                 response.result = {};
                 break;
             // Handle other methods here as needed
+	    case 'resources/list':
+	    case 'prompts/list':
+                response.result = {};
+                break;
             default:
                 const resp = await executeCommand({command:parsedCommand});
                 response = { ...response, ...resp };
