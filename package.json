@@ -1,24 +1,41 @@
 {
-  "name": "mcp-proxy",
-  "version": "1.0.0",
-  "description": "A proxy for Model Context Protocol commands from AI agents to API executors",
+  "name": "@nullplatform/mcp-proxy",
+  "version": "0.0.1",
+  "description": "A CLI proxy for Model Context Protocol (MCP), allowing AI agents to communicate with backend API executors via Nullplatform's control plane.",
   "main": "mcp-proxy.js",
+  "bin": {
+    "mcp-proxy": "./index.js"
+  },
   "scripts": {
     "start": "node mcp-proxy.js",
     "dev": "DEBUG=true node mcp-proxy.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"No tests specified.\" && exit 1",
+    "lint": "echo \"No linter configured.\" && exit 0"
   },
   "keywords": [
     "mcp",
     "proxy",
     "ai",
-    "agent"
+    "agent",
+    "controlplane",
+    "cli",
+    "nullplatform"
   ],
-  "author": "",
-  "license": "ISC",
+  "author": "nullpatform <engineering@nullplatform.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nullplatform/np-mcp-controlplane-proxy.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nullplatform/np-mcp-controlplane-proxy/issues"
+  },
+  "homepage": "https://github.com/nullplatform/np-mcp-controlplane-proxy#readme",
+  "engines": {
+    "node": ">=16"
+  },
   "dependencies": {
     "axios": "^1.6.0",
-    "readline": "^1.3.0",
     "yargs": "^17.7.2",
     "zod": "^3.24.2"
   }
